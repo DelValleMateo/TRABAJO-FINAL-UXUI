@@ -1,0 +1,566 @@
+:root {
+  /* Colors */
+  --bitcoin-orange: #000000;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #151010;
+  --warm-black: #282623;
+  --black: #201e1c;
+  --off-white: #ffffff;
+  --just-white: #fff;
+  --grey: #bababa;
+}
+
+.tick {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  /* Ajusta la posición vertical del icono */
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+  background-color: #151515;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px;
+  /* Ajusta el alto si es necesario */
+  padding: 0 20px;
+  background-image: url("../assets/img/Banner.png")
+}
+
+header img {
+  width: 40px;
+  /* Ajusta el tamaño de la imagen */
+  height: auto;
+}
+
+
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+
+nav {
+  margin-top: -150px;
+  display: flex;
+  gap: 20px;
+  /* Ajusta el espacio entre los enlaces */
+}
+
+nav a {
+  color: var(--just-white);
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+h1 {
+  font-size: 3rem;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+.logo {
+  margin-top: -150px;
+  width: 200px;
+  /* Ajusta el tamaño deseado */
+  height: 40px;
+}
+
+.service {
+  width: 150px;
+  height: 70px;
+  margin-top: 18px;
+  /* Heading 1 */
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 96px;
+  /* identical to box height, or 120% */
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  margin-left: -365px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.singup {
+  margin-top: -150px;
+  width: 200px;
+  height: 100px;
+
+}
+
+.services {
+  padding: 200px 350px;
+  text-align: center;
+  background-color: #151515;
+}
+
+.services h2 {
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 30px;
+  margin-top: -120px;
+  font-family: manrope;
+}
+
+.services p {
+  color: #aaa;
+}
+
+.services-container {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: auto;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+.service-item {
+  padding: 45px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  background: rgba(21, 21, 21, 0.7);
+  -webkit-text-fill-color: #fff;
+  height: 300px;
+  border: 1px solid #CEA561;
+}
+
+.service-item h3 {
+  font-family: Cormorant Garamond;
+}
+
+.service-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.service-item h3 {
+  font-size: 1.8rem;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1.4rem;
+  color: var(--grey);
+}
+
+
+
+section p {
+  margin-top: -1 0px;
+
+}
+
+.Package {
+  text-align: center;
+  color: #ffffff;
+  margin-top: auto;
+  background-color: #151515;
+}
+
+.Package h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  margin-top: -150px;
+  font-family: manrope;
+}
+
+.Package p {
+  font-size: 1.2em;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.packages-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.package-item {
+  background-color: #2B2B2B;
+  border: 1px solid #ffd700;
+  /* Color dorado */
+  border-radius: 10px;
+  padding: 50px;
+  width: 350px;
+  color: #fff;
+  text-align: center;
+  height: 400px;
+}
+
+.package-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.package-item .price {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.package-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.package-item ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.5em;
+}
+
+.package-item li {
+  list-style: none;
+  /* Elimina el estilo de lista por defecto */
+  position: relative;
+  /* Necesario para posicionar el icono */
+  padding-left: 30px;
+  /* Añade espacio a la izquierda para el icono */
+}
+
+.package-item li::before {
+  content: '✔︎';
+  /* Añade el símbolo de tick */
+  color: #000000;
+  /* Cambia el color del tick a blanco */
+  background-color: #CEA561;
+  /* Fondo amarillo para el círculo */
+  font-size: 14px;
+  /* Ajusta el tamaño del tick */
+  width: 20px;
+  /* Ancho del círculo */
+  height: 20px;
+  /* Alto del círculo */
+  border-radius: 50%;
+  /* Hace que el fondo sea circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  /* Posiciona el círculo a la izquierda del texto */
+  top: 0;
+  transform: translateY(10%);
+  /* Centra el icono verticalmente */
+}
+
+
+
+.package-item button {
+  background-color: #ffd700;
+  /* Color dorado */
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.package-item button:hover {
+  background-color: #e0b300;
+}
+
+.calendario {
+  height: 800px;
+  background-color: #151515;
+}
+
+.calendario h2 {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 3rem;
+  font-family: manrope;
+}
+
+.calendario p {
+  text-align: center;
+  padding-top: 10px;
+  color: #aaa;
+}
+
+.calendario-img {
+  padding-top: -100px;
+  text-align: center;
+
+}
+
+.img-calendario {
+  width: 600px;
+  height: auto;
+}
+
+.calendario h3 {
+  padding-top: -100px;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 30px;
+}
+
+/* Estilos para la selección de horarios */
+.time-slots {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  background-color: #151515;
+  /* padding-top: -80px; */
+  /* Elimina esta línea */
+}
+
+
+.time-slots button {
+  background-color: transparent;
+  color: #f2f2f2;
+  border: 1px solid #c8a35f;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time-slots button:hover {
+  background-color: #c8a35f;
+  color: #ffffff;
+}
+
+/* Estilos para el formulario de cita */
+.appointment-form {
+  display: grid;
+  flex-direction: column;
+  /* Para apilar los elementos verticalmente */
+  align-items: center;
+  /* Centra los elementos en el eje horizontal */
+  gap: 15px 220px;
+  background-color: #151515;
+  grid-template-columns: (2, 1fr);
+  margin: 0 auto;
+  max-width: 500px;
+  width: 400px;
+  margin-right: 620px;
+}
+
+
+
+.appointment-form input,
+.appointment-form select {
+  background-color: #2B2B2B;
+  color: #ccc;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  height: auto;
+  width: 425px;
+  margin-left: -195px;
+}
+
+.appointment-form .book-button {
+  grid-column: 1 / -1;
+  background-color: #c8a35f;
+  color: #000000;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+  grid-column: span 2;
+  margin: 0 auto;
+  margin-right: 325px;
+}
+
+.appointment-form .book-button:hover {
+  background-color: #d4b279;
+}
+
+.StayUpdate {
+  height: 400px;
+  text-align: center;
+  background-color: #1B1B1B;
+}
+
+.StayUpdate h2 {
+  font-family: 'Cormorant Garamond';
+  padding-top: 50px;
+  font-size: 40px;
+}
+
+.StayUpdate p {
+  font-size: 15px;
+  color: #aaa;
+}
+
+
+.StayUpdate input {
+  background-color: #333;
+  color: #FFF;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.9rem;
+  width: 400px;
+  outline: none;
+  border-radius: 8px;
+}
+
+.StayUpdate .sing-button {
+  background-color: #CEA561;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 125px;
+  height: 56px;
+}
+
+.StayUpdate .sing-button {
+  margin-top: 65px;
+}
+
+footer {
+  background-color: #151515;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.logo-section img.logofooter {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-section h4 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-family: manrope;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.contact-section p {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: #1b1b1b;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+}
+
+.seccion-contactos p {
+  font-size: 1rem;
+  padding-bottom: 5px;
+  color: #aaa;
+}
+
+.seccion-contactos h4 {
+  font-size: 1.8rem;
+  font-family: manrope;
+}
+
+.seccion-contactos h2 {
+  font-family: Cormorant garamond, serif;
+  font-size: 1.7rem;
+  color: #aaa;
+}
+
+.seccion-contactos img {
+  width: 20px;
+  margin-right: 10px;
+
+}
